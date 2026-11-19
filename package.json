@@ -43,7 +43,7 @@
     "@msgpackr-extract/msgpackr-extract-win32-x64": "3.0.4"
   },
   "devDependencies": {
-    "prebuildify-platform-packages": "5.0.4",
+    "prebuildify-platform-packages": "5.0.5",
     "prebuildify-ci": "^1.0.5",
     "prebuildify-cross": "5.0.0"
   }
