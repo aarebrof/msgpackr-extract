@@ -8,6 +8,8 @@ for (let linux of ['linux-x64', 'linux-arm64', 'linux-arm']) {
 			throw new Error('prebuilds/' + linux + ' has no ' + libc + ' binary; check that every prebuild job uploaded to the release');
 	}
 }
+if (!fs.existsSync('prebuilds/win32-arm64/node.napi.node'))
+	throw new Error('prebuilds/win32-arm64 has no binary; check that every prebuild job uploaded to the release');
 let platformDeps = packageData.optionalDependencies = {};
 let packageName = packageData.name;
 let version = packageData.version;
